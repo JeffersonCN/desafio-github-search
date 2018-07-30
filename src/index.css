@@ -1,5 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+@font-face {
+    font-family: 'Monaco';
+    src: local('Monaco'), url(./assets/fonts/monaco-webfont.woff) format('woff');
 }
+
+html, body { margin: 0; padding: 0 }
