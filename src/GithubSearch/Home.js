@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GithubSearchLogo from './Logo';
 import SearchBar from "./SearchBar";
-import { Container, Row, Col } from 'react-grid-system';
 
 const stylesForHome = {
     maxWidth: "750px",
