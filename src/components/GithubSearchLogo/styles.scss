@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Monaco';
+    src: local('Monaco'), url(./assets/fonts/monaco-webfont.woff) format('woff');
+}
+
+.github-search-logo {
+    font-size: 60px;
+    color: #000;
+
+    .github-text {
+        font-family: 'Monaco', sans-serif;
+    }
+
+    .search-text {
+        font-family: 'Raleway';
+        font-weight: 200;
+        font-style: italic;
+    }
+}
