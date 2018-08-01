@@ -1,0 +1,13 @@
+.home-scene {
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .search-container {
+        padding-bottom: 10rem;
+    }
+}
