@@ -1,0 +1,17 @@
+.repository-info {
+    font-family: 'Raleway';
+    padding: 15px;
+
+    .repository-name {
+        font-size: 35px;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .repository-description {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0 0 15px;
+    }
+}
