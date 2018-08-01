@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class SearchInput extends Component {
     render() {
         return (
-            <input type="text" className="search-input"/>
+            <input type="text" className={styles.searchInput}/>
         );
     }
 }

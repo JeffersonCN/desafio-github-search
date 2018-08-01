@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class GithubSearchLogo extends Component {
     render() {
         return (
-            <div className="github-search-logo" >
-                <span className="github-text" >Github</span>
-                <span className="search-text" > Search</span>
+            <div className={styles.githubSearchLogo} >
+                <span className={styles.githubText} >Github</span>
+                <span className={styles.searchText} > Search</span>
             </div>
         );
     }

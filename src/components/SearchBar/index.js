@@ -4,12 +4,12 @@ import SearchInput from './components/SearchInput';
 
 import { Container, Row, Col } from 'react-grid-system';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class SearchBar extends Component {
     render() {
         return (
-            <Container className="search-bar">
+            <Container className={styles.searchBar}>
                 <Row nogutter>
                         <Col xs={9} md={10}>
                             <SearchInput />

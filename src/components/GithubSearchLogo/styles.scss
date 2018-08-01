@@ -3,15 +3,15 @@
     src: local('Monaco'), url(./assets/fonts/monaco-webfont.woff) format('woff');
 }
 
-.github-search-logo {
+.githubSearchLogo {
     font-size: 60px;
     color: #000;
 
-    .github-text {
+    .githubText {
         font-family: 'Monaco', sans-serif;
     }
 
-    .search-text {
+    .searchText {
         font-family: 'Raleway';
         font-weight: 200;
         font-style: italic;
