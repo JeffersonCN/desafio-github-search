@@ -1,0 +1,46 @@
+.searchResult {
+    margin: 0 auto;
+    padding-top: 15px;
+    max-width: 1300px;
+
+    .header {
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-start ;
+        align-content: flex-start;
+        align-items: center;
+        padding-left: 28px;
+        margin-bottom: 50px;
+
+        font-size: 36px;
+
+        @media all and (min-width: 480px) {
+            font-size: 36px;
+        }
+        @media all and (min-width: 839px) {
+            font-size: 40px;
+        }
+        @media all and (min-width: 1024px) {
+            font-size: 40px;
+        }
+
+        .logoContainer {
+            width: 280px;
+            height: 50px;
+        }
+
+        .searchContainer {
+            width: 800px;
+            height: 50px;
+            margin-left: 70px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .resultContent {
+        max-width: 1510px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
