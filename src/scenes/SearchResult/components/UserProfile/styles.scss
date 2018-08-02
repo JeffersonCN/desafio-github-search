@@ -1,0 +1,27 @@
+.userProfile {
+    font-family: 'Raleway';
+    font-weight: 300;
+    padding: 0 28px 0;
+    max-width: 300px;
+
+    .avatar {
+        width: 280px;
+        max-width: 280px;
+        border-radius: 2px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+        display: block;
+    }
+
+    .nameHeading {
+        font-size: 35px;
+        max-width: 280px;
+        margin: 12px 0 0;
+        line-height: 35px;
+    }
+
+    .loginSubheading {
+        font-size: 20px;
+        color: #5c5c5c;
+        margin: 7px 0 28px;
+    }
+}
