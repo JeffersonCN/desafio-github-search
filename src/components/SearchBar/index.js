@@ -1,26 +1,45 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+
 import SearchButton from './components/SearchButton';
 import SearchInput from './components/SearchInput';
-
-import { Container, Row, Col } from 'react-grid-system';
 
 import styles from './styles.scss';
 
 class SearchBar extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            query: ""
+        }
+
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleEnterKeyUp = this.handleEnterKeyUp.bind(this);
+    }
+
     render() {
         return (
-            <Container className={styles.searchBar}>
-                <Row nogutter>
-                        <Col xs={9} md={10}>
-                            <SearchInput />
-                        </Col>
-                        <Col xs={3} md={2}  >
-                            <SearchButton />
-                        </Col>
-                </Row>
-            </Container>
+            <div className={styles.searchBar}>
+                <SearchInput handleChange={this.handleInputChange} handleEnterKeyUp={this.handleEnterKeyUp} value={this.state.query}/>
+                <SearchButton handleSubmit={this.handleSubmit}/>
+            </div>
         );
+    }
+
+    handleInputChange(e) {
+        this.setState({query: e.target.value});
+    }
+    handleSubmit(e) {
+        e.preventDefault();
+        this.props.history.push(`/users/${this.state.query}`);
+    }
+    handleEnterKeyUp(e) {
+        if (e.key === 'Enter') {
+            this.props.history.push(`/users/${this.state.query}`);
+        }
     }
 }
 
-export default SearchBar;
+export default withRouter(SearchBar);

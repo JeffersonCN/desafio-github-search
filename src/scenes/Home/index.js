@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import GithubSearchLogo from '../../components/GithubSearchLogo';
 import SearchBar from "../../components/SearchBar";
 

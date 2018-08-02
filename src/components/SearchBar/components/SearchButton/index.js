@@ -6,8 +6,8 @@ import styles from './styles.scss';
 class SearchButton extends Component {
     render() {
         return (
-            <button className={styles.searchButton}>
-                <img src={searchIcon} alt="pesquisar usuário do Github"/>
+            <button className={styles.searchButton} onClick={this.props.handleSubmit}>
+                <img className={styles.searchIcon} src={searchIcon} alt="pesquisar usuário do Github" />
             </button>
         );
     }
