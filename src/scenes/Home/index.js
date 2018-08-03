@@ -11,7 +11,7 @@ class Home extends Component {
             <div className={styles.homeScene}>
                 <main className={styles.searchContainer}>
                     <GithubSearchLogo />
-                    <SearchBar />
+                    <SearchBar refreshSearch={console.log} />
                 </main>
             </div>
         );

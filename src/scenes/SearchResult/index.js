@@ -22,10 +22,12 @@ class SearchResult extends Component {
             noData: false,
             query: params.login
         }
+
+        this.handleRefresh = this.handleRefresh.bind(this);
     }
 
     render() {
-        const { user, repos, stars, noData, query} = this.state;
+        const { user, repos, stars, noData, query } = this.state;
         const { searchResult, header, logoContainer, searchContainer, resultContent } = styles;
 
         return (
@@ -35,16 +37,16 @@ class SearchResult extends Component {
                         <GithubSearchLogo />
                     </div>
                     <div className={searchContainer}>
-                        <SearchBar query={query}/>
+                        <SearchBar query={query} refreshSearch={this.handleRefresh} />
                     </div>
                 </div>
-                { repos.length > 0 && <div className={resultContent}>
+                {repos.length > 0 && <div className={resultContent}>
                     <UserProfile user={user} stars={stars} />
-                    <RepositoriesList repos={repos}/>
-                </div> }
-                { noData && <div className={resultContent}>
+                    <RepositoriesList repos={repos} />
+                </div>}
+                {noData && <div className={resultContent}>
                     <UserNotFound />
-                </div> }
+                </div>}
             </div>
         );
     }
@@ -52,20 +54,24 @@ class SearchResult extends Component {
     componentWillMount() {
         const { match: { params } } = this.props;
 
-        GithubService.getUser(params.login)
+        this.fetchData(params.login);
+    }
+
+    fetchData(newQuery) {
+        GithubService.getUser(newQuery)
             .then(user => {
                 if (user.message != null) {
-                    this.setState({noData: true});
+                    this.setState({ noData: true });
                     return;
                 }
 
-                this.setState({user: user, noData: false});
+                this.setState({ user: user, noData: false });
             });
 
-        GithubService.getRepos(params.login)
+        GithubService.getRepos(newQuery)
             .then(repos => {
                 if (repos.message != null) {
-                    this.setState({noData: true});
+                    this.setState({ noData: true });
                     return;
                 }
 
@@ -75,6 +81,10 @@ class SearchResult extends Component {
                     noData: false
                 });
             });
+    }
+
+    handleRefresh(newQuery) {
+        this.fetchData(newQuery);
     }
 }
 

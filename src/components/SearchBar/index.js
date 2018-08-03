@@ -5,6 +5,7 @@ import SearchButton from './components/SearchButton';
 import SearchInput from './components/SearchInput';
 
 import styles from './styles.scss';
+import { EventEmitter } from 'eventemitter3';
 
 class SearchBar extends Component {
     constructor(props) {
@@ -32,14 +33,20 @@ class SearchBar extends Component {
         this.setState({query: e.target.value});
     }
     handleSubmit(e) {
+        const { query } = this.state;
+
         e.preventDefault();
         if (this.state.query !== "") {
-            this.props.history.push(`/users/${this.state.query}`);
+            this.props.history.push(`/users/${query}`);
+            this.props.refreshSearch(query);
         }
     }
     handleEnterKeyUp(e) {
-        if (e.key === 'Enter' && this.state.query !== "") {
-            this.props.history.push(`/users/${this.state.query}`);
+        const { query } = this.state;
+
+        if (e.key === 'Enter' && query !== "") {
+            this.props.history.push(`/users/${query}`);
+            this.props.refreshSearch(query);
         }
     }
 }
