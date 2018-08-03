@@ -3,10 +3,18 @@
     padding: 0 0 30px 44px;
     max-width: 750px;
 
-    .repositoryName {
+    .linkToRepo {
         font-size: 35px;
         font-weight: 800;
         color: #ac53f2;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .repositoryName {
         margin: 0;
     }
 

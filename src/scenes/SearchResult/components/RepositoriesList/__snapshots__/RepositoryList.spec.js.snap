@@ -9,6 +9,7 @@ ShallowWrapper {
         Array [
             Object {
               "description": "Descrição",
+              "html_url": "https://github.com/JeffersonCN/Balan-o-Patrimonial",
               "name": "Repositório",
               "stargazers_count": 10,
             },
@@ -32,6 +33,7 @@ ShallowWrapper {
           repository={
                     Object {
                               "description": "Descrição",
+                              "html_url": "https://github.com/JeffersonCN/Balan-o-Patrimonial",
                               "name": "Repositório",
                               "stargazers_count": 10,
                             }
@@ -49,6 +51,7 @@ ShallowWrapper {
         "props": Object {
           "repository": Object {
             "description": "Descrição",
+            "html_url": "https://github.com/JeffersonCN/Balan-o-Patrimonial",
             "name": "Repositório",
             "stargazers_count": 10,
           },
@@ -71,6 +74,7 @@ ShallowWrapper {
             repository={
                         Object {
                                     "description": "Descrição",
+                                    "html_url": "https://github.com/JeffersonCN/Balan-o-Patrimonial",
                                     "name": "Repositório",
                                     "stargazers_count": 10,
                                   }
@@ -88,6 +92,7 @@ ShallowWrapper {
           "props": Object {
             "repository": Object {
               "description": "Descrição",
+              "html_url": "https://github.com/JeffersonCN/Balan-o-Patrimonial",
               "name": "Repositório",
               "stargazers_count": 10,
             },

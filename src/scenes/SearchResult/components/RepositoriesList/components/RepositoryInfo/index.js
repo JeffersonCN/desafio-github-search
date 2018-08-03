@@ -8,7 +8,9 @@ class RepositoryInfo extends Component {
     render() {
         return (
             <div className={styles.repositoryInfo}>
-                <p className={styles.repositoryName}>{this.props.repository.name}</p>
+                <p className={styles.repositoryName}>
+                    <a className={styles.linkToRepo} target="_blank" href={this.props.repository.html_url}>{this.props.repository.name}</a>
+                </p>
                 <p className={styles.repositoryDescription}>{this.props.repository.description}</p>
                 <TextWithLeftIcon icon={starIcon} text={this.props.repository.stargazers_count} />
             </div>

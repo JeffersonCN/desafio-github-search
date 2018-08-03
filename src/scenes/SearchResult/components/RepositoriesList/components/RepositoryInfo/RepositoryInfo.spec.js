@@ -7,7 +7,8 @@ describe('Testing RepositoryInfo Component', () => {
         const repo = {
             name: "Repositório",
             description: "Descrição",
-            stargazers_count: 10
+            stargazers_count: 10,
+            html_url: "https://github.com/JeffersonCN/Balan-o-Patrimonial"
         }
 
         const wrapper = shallow(
