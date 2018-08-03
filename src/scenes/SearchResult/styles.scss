@@ -1,46 +1,58 @@
 .searchResult {
     margin: 0 auto;
     padding-top: 15px;
-    max-width: 1300px;
 
     .header {
-        width: 100%;
-        display: inline-flex;
-        justify-content: flex-start ;
-        align-content: flex-start;
-        align-items: center;
-        padding-left: 28px;
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 280px;
+        grid-template-rows: auto auto;
 
         font-size: 36px;
 
         @media all and (min-width: 480px) {
             font-size: 36px;
+            grid-template-columns: 480;
         }
         @media all and (min-width: 839px) {
             font-size: 40px;
+            grid-template-columns: 280px 550px;
+            grid-column-gap: 75px;
         }
         @media all and (min-width: 1024px) {
             font-size: 40px;
+            grid-template-columns: 280px 850px;
         }
 
         .logoContainer {
-            width: 280px;
-            height: 50px;
+            
         }
 
         .searchContainer {
-            width: 800px;
-            height: 50px;
-            margin-left: 70px;
             padding-bottom: 15px;
+            width: 80%;
         }
     }
 
     .resultContent {
-        max-width: 1510px;
-        display: inline-flex;
-        justify-content: space-around;
-        align-content: center;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 280px;
+        grid-template-rows: auto auto;
+        grid-column-gap: 75px;
+
+        @media all and (min-width: 480px) {
+            grid-template-columns: 480px;
+            grid-column-gap: 75px;
+        }
+        @media all and (min-width: 839px) {
+            grid-template-columns: 280px 550px;
+            grid-column-gap: 75px;
+        }
+        @media all and (min-width: 1024px) {
+            grid-template-columns: 280px 850px;
+            grid-template-rows: auto;
+        }
     }
 }

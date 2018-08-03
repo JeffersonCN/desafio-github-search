@@ -33,10 +33,12 @@ class SearchBar extends Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        this.props.history.push(`/users/${this.state.query}`);
+        if (this.state.query !== "") {
+            this.props.history.push(`/users/${this.state.query}`);
+        }
     }
     handleEnterKeyUp(e) {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' && this.state.query !== "") {
             this.props.history.push(`/users/${this.state.query}`);
         }
     }
