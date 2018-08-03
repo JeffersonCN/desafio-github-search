@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing UserProfile Component shoud render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserProfile
+    stars={10}
+    user={
+        Object {
+            "avatar_url": "https://api.adorable.io/avatars/285/abott@adorable.png",
+            "company": "Concrete Solutions",
+            "followers": 10,
+            "location": "Praia Grande, Brazil",
+            "login": "jeffersoncn",
+            "name": "Jefferson Nascimento",
+            "public_repos": 30,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="avatar do usuário no Github"
+          className={undefined}
+          src="https://api.adorable.io/avatars/285/abott@adorable.png"
+/>,
+        <p
+          className={undefined}
+>
+          Jefferson Nascimento
+</p>,
+        <p
+          className={undefined}
+>
+          jeffersoncn
+</p>,
+        <TextWithLeftIcon
+          icon="organization-icon.svg"
+          text="Concrete Solutions"
+/>,
+        <TextWithLeftIcon
+          icon="location-icon.svg"
+          text="Praia Grande, Brazil"
+/>,
+        <TextWithLeftIcon
+          icon="star-icon.svg"
+          text={10}
+/>,
+        <TextWithLeftIcon
+          icon="repositories-icon.svg"
+          text={30}
+/>,
+        <TextWithLeftIcon
+          icon="followers-icon.svg"
+          text={10}
+/>,
+      ],
+      "className": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "avatar do usuário no Github",
+          "className": undefined,
+          "src": "https://api.adorable.io/avatars/285/abott@adorable.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Jefferson Nascimento",
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": "Jefferson Nascimento",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "jeffersoncn",
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": "jeffersoncn",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "icon": "organization-icon.svg",
+          "text": "Concrete Solutions",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "icon": "location-icon.svg",
+          "text": "Praia Grande, Brazil",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "icon": "star-icon.svg",
+          "text": 10,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "icon": "repositories-icon.svg",
+          "text": 30,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "icon": "followers-icon.svg",
+          "text": 10,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "aside",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="avatar do usuário no Github"
+            className={undefined}
+            src="https://api.adorable.io/avatars/285/abott@adorable.png"
+/>,
+          <p
+            className={undefined}
+>
+            Jefferson Nascimento
+</p>,
+          <p
+            className={undefined}
+>
+            jeffersoncn
+</p>,
+          <TextWithLeftIcon
+            icon="organization-icon.svg"
+            text="Concrete Solutions"
+/>,
+          <TextWithLeftIcon
+            icon="location-icon.svg"
+            text="Praia Grande, Brazil"
+/>,
+          <TextWithLeftIcon
+            icon="star-icon.svg"
+            text={10}
+/>,
+          <TextWithLeftIcon
+            icon="repositories-icon.svg"
+            text={30}
+/>,
+          <TextWithLeftIcon
+            icon="followers-icon.svg"
+            text={10}
+/>,
+        ],
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "avatar do usuário no Github",
+            "className": undefined,
+            "src": "https://api.adorable.io/avatars/285/abott@adorable.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Jefferson Nascimento",
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": "Jefferson Nascimento",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "jeffersoncn",
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": "jeffersoncn",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "icon": "organization-icon.svg",
+            "text": "Concrete Solutions",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "icon": "location-icon.svg",
+            "text": "Praia Grande, Brazil",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "icon": "star-icon.svg",
+            "text": 10,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "icon": "repositories-icon.svg",
+            "text": 30,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "icon": "followers-icon.svg",
+            "text": 10,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "aside",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
