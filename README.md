@@ -1,7 +1,7 @@
 # Desafio Concrete - Github Search
 Este repositório contém o código fonte do projeto feito para o desafio da Concrete Solutions.
 
-Uma versão demo encontra-se publicada no [Netlify](https://determined-neumann-67eeef.netlify.com/).
+Uma versão demo encontra-se publicada no [Netlify](https://github-search.jeffersoncruz.com/).
 
 O projeto tinha como objetivo consumir a [API pública](https://developer.github.com/v3/) do Github listar detalhes de usuários e repositórios.
 
